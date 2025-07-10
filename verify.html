@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Key Verification</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Key Verification</h1>
+    <p id="result">Verifying...</p>
+  </div>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const key = urlParams.get('key');
+    const validKey = "LuminaKey_Q3EmDF3bcKXeyOZur3Pq";
+
+    const resultText = document.getElementById("result");
+
+    if (key === validKey) {
+      resultText.textContent = "✅ Key Valid! Please return to the Roblox script.";
+    } else {
+      resultText.textContent = "❌ Invalid Key!";
+    }
+  </script>
+</body>
+</html>
