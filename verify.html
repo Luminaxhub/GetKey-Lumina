@@ -2,26 +2,25 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Проверка ключа</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Подтверждение ключа</title>
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <div class="container">
-    <img src="https://i.imgur.com/TtxuN3P.png" alt="Логотип" class="logo">
-    <h1>🔐 Проверка ключа</h1>
-    <p id="result">Проверка...</p>
+  <header>
+    <img src="https://i.pinimg.com/564x/5c/31/56/5c3156cf72a70349a0c792e14708961c.jpg" alt="Anime Logo"/>
+    <h1>Проверка ключа</h1>
+  </header>
+
+  <div class="card">
+    <p>Введите ваш ключ ниже:</p>
+    <input type="text" placeholder="Введите ключ..." style="padding: 10px; width: 90%; border-radius: 8px; border: none; margin-bottom: 15px;">
+    <br/>
+    <button class="button">✅ Проверить</button>
   </div>
 
-  <script>
-    const key = new URLSearchParams(window.location.search).get('key');
-    const validKey = "LuminaKey_Q3EmDF3bcKXeyOZur3Pq";
-    const resultText = document.getElementById("result");
-
-    if (key === validKey) {
-      resultText.innerHTML = "✅ Ключ действителен! Вернитесь в скрипт Roblox.";
-    } else {
-      resultText.innerHTML = "❌ Неверный ключ!";
-    }
-  </script>
+  <footer>
+    © 2025 Luminaprojects — Luminakey System
+  </footer>
 </body>
 </html>
